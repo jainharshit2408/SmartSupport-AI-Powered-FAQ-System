@@ -21,7 +21,7 @@ vectordb_file_path = "faiss_index"
 
 def create_vector_db():
     try:
-        loader = CSVLoader(file_path='codebasics_faqs.csv', source_column="prompt")
+        loader = CSVLoader(file_path='faqs.csv', source_column="prompt")
         data = loader.load()
 
         if not data:
